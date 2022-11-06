@@ -1,0 +1,29 @@
+$color-White:#fff;
+$color-font:#3e80fb;
+
+$font-main:yekan;
+$font-number:samim;
+
+@mixin Cneter_Maker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin No_Padding_Margin {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    direction: rtl;
+    text-align: center;
+}
+
+@mixin after-before {
+    position: absolute;
+    content: '';
+    border-radius: 40%;                
+    width: 10px;
+    height: 30px;
+    background-color: $color-font;
+}

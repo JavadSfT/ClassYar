@@ -1,0 +1,160 @@
+
+#Header #Picture {
+    height: 58px;
+    border: 1px solid black;
+
+    div{
+        width: 60px;
+        height: 60px;
+        margin: auto;
+    }
+}
+
+#Header #Title {
+    height: 58px;
+    margin: auto;
+    border: 1px solid black;
+    
+    p{
+        font-family: $font-number;
+        margin: 15px auto;
+    }
+}
+
+#Header #Clock {
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 12px 0 0 0;
+    font-family: $font-number;
+    p{
+        margin: 12px auto;
+    }
+}
+
+@media screen and (min-width:576px) {
+    #Header #Picture {
+        width: 24.65%;
+    }
+
+    #Header #Title {
+        width: 50.7%;
+        p{
+            font-size: 20px;
+            margin: auto;
+        }
+    }
+
+    #Header #Clock {
+        width: 24.65%;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    #Header #Picture {
+        width: 19.725%;
+    }
+
+    #Header #Title {
+        width: 60.55%;
+
+        p{
+            font-size: 21px;
+        }
+    }
+
+    #Header #Clock {
+        width: 19.725%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #Header #Picture {
+        width: 16.458%;
+    }
+
+    #Header #Title {
+        width: 67.074%;
+        p{
+            font-size: 24px;
+            margin:11px auto;
+        }
+    }
+
+    #Header #Clock {
+        width: 16.458%;
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    #Header #Picture {
+        width: 14.1%;
+    }
+
+    #Header #Title {
+        width: 71.8%;
+        p{
+            font-size: 27px;
+            margin:11px auto;
+        }
+    }
+
+    #Header #Clock {
+        width: 14.1%;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    #Header #Picture {
+        width: 14.13%;
+    }
+
+    #Header #Title {
+        width: 71.74%;
+    }
+
+    #Header #Clock {
+        width: 14.13%;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    #Header #Picture {
+        width: 12.362%;
+    }
+
+    #Header #Title {
+        width: 75.276%;
+        p{
+            font-size: 30px;
+            margin:10px auto;
+        }
+    }
+
+    #Header #Clock {
+        width: 12.362%;
+    }
+}
+
+
+
+@media screen and (min-width:1700px) {
+    #Header #Picture {
+        width: 12.4%;
+    }
+
+    #Header #Title {
+        width: 75%;
+        p{
+            margin:5px auto;
+        }
+    }
+
+    #Header #Clock {
+        width: 12.385%;
+        font-size: 28px;
+        padding: 11px 0 0 0;
+    }
+}

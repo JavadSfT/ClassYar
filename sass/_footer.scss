@@ -1,0 +1,60 @@
+#footer{
+    width: 100%;
+    overflow: hidden;
+}
+
+div.box {
+    width: 150%;
+    position: relative;
+    top: -15px;
+    height: 30px;
+
+    h2{
+        padding: 6px 0 0 0;
+        -webkit-animation: Animation 30s linear infinite;
+        -moz-animation: Animation 30s linear infinite;
+        -o-animation :Animation 30s linear infinite;
+        animation: Animation 30s linear infinite;
+        z-index: -1;
+    }
+}
+
+@keyframes Animation {
+    0% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes Animation {
+    0% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+
+@media screen and (min-width:576px){}
+@media screen and (min-width:768px){}
+@media screen and (min-width:992px){}
+@media screen and (min-width:1200px){}
+@media screen and (min-width:1500px){}
+@media screen and (min-width:1800px){}
