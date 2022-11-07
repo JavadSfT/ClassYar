@@ -1,22 +1,15 @@
 @font-face {
-    font-family: yekan;
-    src: url('../font/iranyekan.woff2') format('woff');
-    font-weight: bolder;
-    font-style: normal;
-}
-
-@font-face {
     font-family: samim;
     src: url('../font/Samim.woff');
 }
 
 *{
     @include No_Padding_Margin;
+    font-family: $font-main;
 }
 
 body {
-    overflow-x: hidden;
-    font-family: $font-main;
+    overflow-x: hidden; 
     font-weight: bold ;
 }
 

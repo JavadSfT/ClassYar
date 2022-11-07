@@ -7,7 +7,6 @@
             position: relative;
             background-color: $color-font;
             color: $color-White;
-            font-family: $font-number;
             border-radius: 50%;
             padding: 0.25%;
 
@@ -31,7 +30,6 @@
         }
     
         &:last-child{
-            font-family: $font-number;
             color: $color-font;
         }
     }
