@@ -59,9 +59,9 @@ fetch(url)
 
                 let li = document.createElement("li");
 
-                if (Column.TimeSheet[num].Status == 0) { li.style.backgroundColor = "rgb(226, 80, 80)"; }
+                if (Column.TimeSheet[num].Status == 0) { li.style.backgroundColor = "rgb(255, 132, 132)"; }
                 else if (Column.TimeSheet[num].Status == 1) { li.style.backgroundColor = "#e1e1e1"; }
-                else if (Column.TimeSheet[num].Status == 2) { li.style.backgroundColor = "Lightblue"; }
+                else if (Column.TimeSheet[num].Status == 2) { li.style.backgroundColor = "rgb(237, 255, 102)"; }
 
                 const ul = document.querySelector('ul');
 
@@ -117,9 +117,9 @@ fetch(url)
 
                 let li = document.createElement("li");
 
-                if (Column.TimeSheet[num].Status == 0) { li.style.backgroundColor = "rgb(226, 80, 80)"; }
+                if (Column.TimeSheet[num].Status == 0) { li.style.backgroundColor = "rgb(255, 132, 132)"; }
                 else if (Column.TimeSheet[num].Status == 1) { li.style.backgroundColor = "#e1e1e1"; }
-                else if (Column.TimeSheet[num].Status == 2) { li.style.backgroundColor = "Lightblue"; }
+                else if (Column.TimeSheet[num].Status == 2) { li.style.backgroundColor = "rgb(237, 255, 102)"; }
 
                 const ul = document.querySelector('ul');
 
@@ -175,9 +175,9 @@ fetch(url)
                 let li = document.createElement("li");
 
 
-                if (Column.TimeSheet[num].Status == 0) { li.style.backgroundColor = "rgb(226, 80, 80)"; }
+                if (Column.TimeSheet[num].Status == 0) { li.style.backgroundColor = "rgb(255, 132, 132)"; }
                 else if (Column.TimeSheet[num].Status == 1) { li.style.backgroundColor = "#e1e1e1"; }
-                else if (Column.TimeSheet[num].Status == 2) { li.style.backgroundColor = "Lightblue"; }
+                else if (Column.TimeSheet[num].Status == 2) { li.style.backgroundColor = "rgb(237, 255, 102)"; }
 
                 const ul = document.querySelector('ul');
 

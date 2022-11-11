@@ -38,5 +38,5 @@ RefreshPage();
 function RefreshPage() {
     setTimeout(function () {
         location.reload();
-    }, 360000);
+    }, 180000);
 }

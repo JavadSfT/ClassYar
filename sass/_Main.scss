@@ -6,12 +6,19 @@
 *{
     @include No_Padding_Margin;
     font-family: $font-main;
+    
+    body {
+        overflow-x: hidden; 
+        font-weight: bold ;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-body {
-    overflow-x: hidden; 
-    font-weight: bold ;
-}
+
 
 ::-webkit-scrollbar{
     display: none;
@@ -22,8 +29,7 @@ section {
     height: auto;
     margin: 0.5% auto;
     overflow-x: hidden;
-    border: 5px ridge #a1a1a1;
-    background-color: #adadad;
+    border: 5px ridge #646464;
 }
 
 #Header {
@@ -41,6 +47,8 @@ section {
     justify-content: flex-start;
     width: 100%;
     font-family: samim;
+    background-color: #adadad;
+
 }
 
 #Footer {
@@ -50,7 +58,3 @@ section {
     background-color: $color-White;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
