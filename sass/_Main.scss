@@ -3,13 +3,13 @@
     src: url('../font/Samim.woff');
 }
 
-*{
+* {
     @include No_Padding_Margin;
     font-family: $font-main;
-    
+
     body {
-        overflow-x: hidden; 
-        font-weight: bold ;
+        overflow-x: hidden;
+        font-weight: bold;
     }
 
     img {
@@ -20,7 +20,7 @@
 
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -43,7 +43,7 @@ section {
 .Body {
     display: flex;
     flex-wrap: wrap;
-    align-content:flex-start;
+    align-content: flex-start;
     justify-content: flex-start;
     width: 100%;
     font-family: samim;
@@ -57,4 +57,3 @@ section {
     border: 1px solid #a1a1a1;
     background-color: $color-White;
 }
-

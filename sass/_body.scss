@@ -1,35 +1,36 @@
 .Body li {
     border: 1px solid black;
-    p{
+
+    p {
         margin: 8px auto;
 
-        &:first-child{
+        &:first-child {
             position: relative;
             background-color: $color-font;
             color: $color-White;
             border-radius: 50%;
             padding: 0.25%;
 
-            &::after{
+            &::after {
                 @include after-before;
                 right: 0;
             }
-    
-            &::before{
+
+            &::before {
                 @include after-before;
                 left: 0;
-            }    
+            }
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 44px;
 
         }
-    
-        &:last-child{
+
+        &:last-child {
             color: $color-font;
         }
     }
@@ -40,9 +41,10 @@
     .Body li {
         width: calc(100% / 4 - 2px);
 
-        p{
+        p {
             font-size: 14.5px;
-            &:first-child{
+
+            &:first-child {
                 width: 85%;
                 font-size: 16px;
             }
@@ -53,9 +55,11 @@
 @media screen and (min-width:768px) {
     .Body li {
         width: calc(100% / 5 - 2px);
-        p{
+
+        p {
             font-size: 16px;
-            &:first-child{
+
+            &:first-child {
                 font-size: 17px;
             }
         }
@@ -65,9 +69,9 @@
 @media screen and (min-width:992px) {
     .Body li {
         width: calc(100% / 6 - 2px);
-        
-        p{
-            &:first-child{
+
+        p {
+            &:first-child {
                 font-size: 18px;
             }
         }
@@ -93,8 +97,9 @@
 @media screen and (min-width:1500px) {
     .Body li {
         width: calc(100% / 8 - 2px);
-        p{
-            &:first-child{
+
+        p {
+            &:first-child {
                 font-size: 18.5px;
             }
         }
@@ -105,22 +110,25 @@
 @media screen and (min-width:1700px) {
     .Body li {
         width: calc(100% / 8 - 2px);
-        
-        p{
+
+        p {
             font-size: 17.5px;
-            &:first-child{
+
+            &:first-child {
                 font-size: 19.5px;
                 margin: 8px auto;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 margin: 8px 0;
             }
-            &:last-child{
+
+            &:last-child {
                 margin: 10px 0;
             }
         }
     }
-   
+
 }
 
 @media screen and(min-Width :1850px) {
@@ -141,10 +149,11 @@
 // Important for Monitor size
 
 @media screen and(min-height : 850px) {
-    ul{
+    ul {
         height: calc(100vh - 150px);
     }
-    li{
+
+    li {
         height: calc((100vh - 160px) / 5);
     }
 }
