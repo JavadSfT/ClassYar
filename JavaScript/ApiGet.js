@@ -86,7 +86,7 @@ fetch(url)
                 if (Column.TimeSheet.length > 40) {
                     SecChart();
                 } else {
-                    FirstChart();
+                    location.reload();
                 }
             }, 60000);
         }
@@ -142,7 +142,7 @@ fetch(url)
                 }
 
                 if (Column.TimeSheet.length > 80) { ThirdChart(); }
-                else { FirstChart(); }
+                else { location.reload(); }
 
             }, 60000);
         }
@@ -198,7 +198,7 @@ fetch(url)
                 for (var i = 0; i < _RemoveChart.length; i++) {
                     _RemoveChart[i].remove();
                 }
-                FirstChart();
+                location.reload();
             }, 60000);
         }
 

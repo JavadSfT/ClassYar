@@ -29,14 +29,3 @@ function Width() {
         hide.style = "display: none;";
     }
 };
-
-
-
-
-RefreshPage();
-
-function RefreshPage() {
-    setTimeout(function () {
-        location.reload();
-    }, 180000);
-}
