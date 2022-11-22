@@ -28,37 +28,69 @@ fetch(url)
 
         Box_Title.appendChild(Tiltle);
         Box.appendChild(Box_Title);
-        
 
-        let _ChartPage = Column.TimeSheet.length / 40;
-        _ChartPage_Round = _ChartPage.toFixed(0);
+        Chart1();
 
-        if (_ChartPage_Round == _ChartPage) {
-            _ChartPage_Round;
-        }
-        else if (_ChartPage_Round < _ChartPage) {
-            _ChartPage_Round++;
-        }
-        alert(_ChartPage_Round);
+        function Chart1() {
+            var _Min = 0;
 
-        for (let index = 1; index <= _ChartPage; index++) {
-            if (_ChartPage == index) {
-                let start = (index * 40) - 40;
-                let end = Column.TimeSheet.length;
-                FirstChart(start, end);
-            }
-            else if (_ChartPage != index) {
-                let start = (index * 40) - 40;
-                let end = (index * 40);
-                FirstChart(start, end);
+            if (Column.TimeSheet.length > 40) {
+                var _Max = 40;
+            } else {
+                _Max = Column.TimeSheet.length;
             }
 
+            ListMaker(_Min, _Max);
+
+            setTimeout(function () {
+                ListClear();
+
+                if (Column.TimeSheet.length > 40) {
+                    Chart2();
+                } else {
+                    location.reload();
+                }
+            }, ReloadTimer);
         }
 
-        function FirstChart(start, end) {
+        function Chart2() {
+            var _Min = 40;
+            if (Column.TimeSheet.length > 80) {
+                var _Max = 80;
+            } else {
+                _Max = Column.TimeSheet.length;
+            }
+
+            ListMaker(_Min, _Max);
+
+            setTimeout(function () {
+                ListClear();
+                if (Column.TimeSheet.length > 80) { Chart3(); }
+                else { location.reload(); }
+
+            }, ReloadTimer);
+        }
 
 
-            for (let num = start; num < end; num++) {
+        function Chart3() {
+            var _Min = 80;
+            if (Column.TimeSheet.length > 120) {
+                var _Max = 120;
+            } else {
+                _Max = Column.TimeSheet.length;
+            }
+
+            ListMaker(_Min, _Max);
+
+            setTimeout(function () {
+                ListClear();
+                location.reload();
+            }, ReloadTimer);
+        }
+
+
+        function ListMaker(Min, Max) {
+            for (let num = Min; num < Max; num++) {
 
                 let RoomId_Text = document.createTextNode(Column.TimeSheet[num].RoomID);
                 let CrsName_Text = document.createTextNode(Column.TimeSheet[num].CrsName);
@@ -95,15 +127,17 @@ fetch(url)
 
                 ul.appendChild(li);
             }
-            setTimeout(function () {
-                let _RemoveChart = document.querySelectorAll('li');
-                for (let x = 0; x < _RemoveChart.length; x++) {
-                    _RemoveChart[x].remove();
-                }
-            }, 10000);
         }
-
 
     })
     .catch(err => {
     })
+
+function ListClear() {
+    var _RemoveChart = document.querySelectorAll('li');
+    for (var i = 0; i < _RemoveChart.length; i++) {
+        _RemoveChart[i].remove();
+    }
+}
+
+let ReloadTimer = 10000;

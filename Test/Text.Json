@@ -178,7 +178,8 @@
             "Etime": "11",
             "Description": "(8-11)",
             "Status": "1"
-        },{
+        },
+        {
             "CrsType": "main",
             "RoomID": "205",
             "CrsID": "1347",
@@ -352,7 +353,8 @@
             "Etime": "11",
             "Description": "(8-11)",
             "Status": "1"
-        },{
+        },
+        {
             "CrsType": "main",
             "RoomID": "205",
             "CrsID": "1347",
@@ -526,7 +528,8 @@
             "Etime": "11",
             "Description": "(8-11)",
             "Status": "1"
-        },{
+        },
+        {
             "CrsType": "main",
             "RoomID": "205",
             "CrsID": "1347",
@@ -700,7 +703,8 @@
             "Etime": "11",
             "Description": "(8-11)",
             "Status": "1"
-        },{
+        },
+        {
             "CrsType": "main",
             "RoomID": "205",
             "CrsID": "1347",
@@ -874,7 +878,8 @@
             "Etime": "11",
             "Description": "(8-11)",
             "Status": "1"
-        },{
+        },
+        {
             "CrsType": "main",
             "RoomID": "205",
             "CrsID": "1347",
@@ -1048,7 +1053,8 @@
             "Etime": "11",
             "Description": "(8-11)",
             "Status": "1"
-        },{
+        },
+        {
             "CrsType": "main",
             "RoomID": "205",
             "CrsID": "1347",
@@ -1225,6 +1231,3 @@
         }
     ]
 }
-
-
-
