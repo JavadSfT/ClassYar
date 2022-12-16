@@ -31,62 +31,62 @@ fetch(url)
 
         Chart1();
 
-        function Chart1() {
-            var _Min = 0;
 
-            if (Column.TimeSheet.length > 40) {
-                var _Max = 40;
+        let _ChartPage = Column.TimeSheet.length / 40;
+        _ChartPage_Round = _ChartPage.toFixed(0);
+
+        if (_ChartPage_Round == _ChartPage) {
+            _ChartPage_Round;
+        }
+        else if (_ChartPage_Round < _ChartPage) {
+            _ChartPage_Round++;
+        }
+
+        for (var x = 1; x <= _ChartPage_Round; x++) {
+
+            var _Min = (x * 40) - 40;
+
+            if (Column.TimeSheet.length > x * 40) {
+                var _Max = x * 40;
             } else {
                 _Max = Column.TimeSheet.length;
             }
 
-            ListMaker(_Min, _Max);
+            ListMaker(_Min , _Max);
 
             setTimeout(function () {
                 ListClear();
 
-                if (Column.TimeSheet.length > 40) {
-                    Chart2();
+                if (Column.TimeSheet.length > _Max) {
+                    alert("suc")
                 } else {
                     location.reload();
                 }
             }, ReloadTimer);
         }
 
-        function Chart2() {
-            var _Min = 40;
-            if (Column.TimeSheet.length > 80) {
-                var _Max = 80;
-            } else {
-                _Max = Column.TimeSheet.length;
-            }
 
-            ListMaker(_Min, _Max);
+        // function Chart1() {
+        //     var _Min = 0;
 
-            setTimeout(function () {
-                ListClear();
-                if (Column.TimeSheet.length > 80) { Chart3(); }
-                else { location.reload(); }
+        //     if (Column.TimeSheet.length > 40) {
+        //         var _Max = 40;
+        //     } else {
+        //         _Max = Column.TimeSheet.length;
+        //     }
 
-            }, ReloadTimer);
-        }
+        //     ListMaker(_Min, _Max);
 
+        //     setTimeout(function () {
+        //         ListClear();
 
-        function Chart3() {
-            var _Min = 80;
-            if (Column.TimeSheet.length > 120) {
-                var _Max = 120;
-            } else {
-                _Max = Column.TimeSheet.length;
-            }
-
-            ListMaker(_Min, _Max);
-
-            setTimeout(function () {
-                ListClear();
-                location.reload();
-            }, ReloadTimer);
-        }
+        //         if (Column.TimeSheet.length > 40) {
+        //             Chart2();
+        //         } else {
+        //             location.reload();
+        //         }
+        //     }, ReloadTimer);
+        // }
 
 
         function ListMaker(Min, Max) {
